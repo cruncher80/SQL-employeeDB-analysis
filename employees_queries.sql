@@ -8,8 +8,7 @@ SELECT e.emp_no, e.last_name, e.first_name, e.gender, s.salary
 -- show first and last names of each employe hired in 1986
 SELECT first_name, last_name, hire_date
 	FROM employees
-WHERE hire_date >= '1986-01-01'
-	AND hire_date <= '1986-12-31'
+WHERE (DATE_PART ('year', hire_date) = 1986)
 ORDER BY hire_date;
 
 -- show all managers
@@ -44,7 +43,7 @@ JOIN departments as d
 	ON (de.dept_no=d.dept_no)
 WHERE dept_name = 'Sales';
 
--- employees in Sales and Development depts :employee number, last name, first name, and department name.4
+-- employees in Sales and Development depts w employee number, last name, first name, and department name
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 	FROM department_employees AS de
 JOIN employees AS e
