@@ -1,1 +1,1 @@
-# sql-challenge
+This project uses postgres to import csvs of various employee data information into SQL and sort it using a variety of queries. There is an ERD showing the connections in the data, and a Jupyter notebook file showing a breakdown of salaries by range and by title.
