@@ -1,0 +1,27 @@
+body {
+    background-color: silver;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+hr {
+    border-top: 10px dashed red;
+}
+
+p {
+    font-size: 18px;
+}
+
+#erd {
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 10px 10px blue;
+}
+
+#sql {
+    width: 700px;
+    height: 800px;
+    box-shadow: 10px 10px 10px rgb(67, 194, 216);
+}
